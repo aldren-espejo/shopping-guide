@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    <main-categories />
+    <categoryList />
   </div>
 </template>
 
 <script>
-import MainCategories from  './components/MainCategories.vue';
+import CategoryList from  './components/CategoryList';
 
 export default {
   components: {
-    MainCategories
+    CategoryList,
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  #app{
+    padding: 30px;
+  }
+</style>
