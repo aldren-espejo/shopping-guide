@@ -1,0 +1,11 @@
+{
+    "categories":[
+        {
+        "categoryName": "Dairy",
+        "aisleNum": 1
+        }, {
+            "categoryName": "Baking",
+            "aisleNum": 2
+        }
+    ]
+}

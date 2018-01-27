@@ -1,5 +1,10 @@
-import Vue from 'vue'
-import App from './App.vue'
+import './firebase';
+import Vue from 'vue';
+import App from './App.vue';
+import VueFire from 'vuefire';
+
+// use vuefire plugin
+Vue.use(VueFire);
 
 new Vue({
   el: '#app',

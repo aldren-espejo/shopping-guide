@@ -1,20 +1,15 @@
 <template>
   <div id="app">
-
+    <main-categories />
   </div>
 </template>
 
 <script>
+import MainCategories from  './components/MainCategories.vue';
+
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+  components: {
+    MainCategories
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>
