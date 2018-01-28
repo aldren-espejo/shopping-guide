@@ -1,19 +1,19 @@
 <template>
     <li>
-        <span class="asile-num">{{catItem.aisleName}}</span>
-        <span class="category-name">{{catItem.categoryName}}</span>
+        <span class="asile-num">{{category.aisleName}}</span>
+        <span class="category-name">{{category.categoryName}}</span>
+        <addToCart :category="category" />
     </li>
 </template>
 
 <script>
+import AddToCart from './AddToCart';
 
 export default {
-  props:['category'],
-  data(){
-      return{
-          catItem: this.category
-      }
-  }
+    props:['category'],
+    components:{
+        AddToCart
+    }
 }
 </script>
 
@@ -42,6 +42,7 @@ export default {
 
         &.category-name{
             font-size: 24px;
+            margin: 0 auto 0 0;
         }
     }
   }

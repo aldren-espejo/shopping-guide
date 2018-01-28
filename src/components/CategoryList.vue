@@ -18,7 +18,7 @@ import {categoriesRef} from '../firebase';
 export default {
   data(){
     return{
-      keyword: ''
+      keyword: '',
     }
   },
   firebase:{
